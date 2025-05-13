@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  Estilo Cabeçalho */
+#cabeca {
+  height: 200px;
+  background-color: #1CAA77;
+  font-family: Arial;
+}
+
+/*
+.buscas-box {
+    
+}
+*/
+
+
+.buscas-input {
+    outline: 0;
+    font-size: 1.2em;
+    color: #fff;
+    width: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    transition: .45s;
+}
+
+
+.buscas-box:hover .buscas-input {
+   
+    padding-left: 2em;
+    padding-right: 1em;
+    width: 250px;
+}
+
+
+/* ESTILO MAIN - ANDRIUS*/
+
+
+#blocoMain{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+
+.blocoBanner{
+    width: auto;
+    height: 250px;
+    margin-top: 70px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+
+.blocoCategoria{
+    display: inline-block;
+    bottom: 250px;
+    width: 250px;
+    height: 200px;
+    margin: 50px 10px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+
+.blocoPrincipaisF{
+    margin: 10px 10px;
+    width: 250px;
+    height: 200px;
+    background-color: grey;
+}
+
+
+.hr{
+    margin: 50px;
+}
+
+
+
+
+/* ESTILO RODAPÉ */
+
+
+#rodape{
+    background-color: orange;
+    width: auto;
+    height: 250px;
+}
+
+
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.rodape p{
+    margin-bottom: 5px;
+}
+
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+
+
+.rodape_div{
+    padding: 60px 0px 40px 0px;
+}
+
+
+
+
+
