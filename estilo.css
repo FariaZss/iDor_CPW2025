@@ -1,7 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
+body {
+  width: 100%; /* O body ocupa toda a largura do viewport */
+  height: 100vh; /* O body ocupa toda a altura do viewport */
+  margin: 0; /* Remova a margem padrão */
+  padding: 0; /* Remova o preenchimento padrão */
+  box-sizing: border-box; /* Garante que o padding e a borda não aumentem a largura do elemento */
 }
+
 
 
 /*  Estilo Cabeçalho */
@@ -39,56 +43,46 @@
 
 
 /* ESTILO MAIN - ANDRIUS*/
+
+
 .subtitles{
     margin: 10px;
 }
 
-
-
 #blocoMain{
     display: flex;
+    flex-direction: row;
     width: auto;
     height: auto;
-    align-items: center;
-    justify-content: center;
     background-color: blue;
 }
 
 
 .blocoBanner{
-    width: auto;
-    height: 250px;
-    margin-top: 70px;
-    background-color: grey;
-    border-radius: 20px;
-}
-
-
-.blocoCategoria{
-    display: inline-block;
-    bottom: 250px;
-    width: 250px;
-    height: 200px;
-    margin: 50px 10px;
+    height: 100px;
+    width: 100px;
     border-radius: 10px;
     background-color: grey;
 }
 
 
+#blocoCategoria div{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
 .blocoPrincipaisF{
-    display: inline-flex;
-    margin: 50px 10px;
-    width: 250px;
-    height: 200px;
+     height: 100px;
+    width: 100px;
     border-radius: 10px;
     background-color: grey;
 }
 
 .blocoPromos{
-    display: inline-flex;
-    margin: 50px 10px;
-    width: 450px;
-    height: 250px;
+     height: 100px;
+    width: 100px;
     border-radius: 10px;
     background-color: grey;
 
