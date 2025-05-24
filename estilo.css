@@ -39,7 +39,9 @@
 
 
 /* ESTILO MAIN - ANDRIUS*/
-
+.subtitles{
+    margin: 10px;
+}
 
 #blocoMain{
     display: flex;
@@ -72,9 +74,11 @@
 
 
 .blocoPrincipaisF{
-    margin: 10px 10px;
+    display: inline-block;
+    margin: 50px 10px;
     width: 250px;
     height: 200px;
+    border-radius: 10px;
     background-color: grey;
 }
 
