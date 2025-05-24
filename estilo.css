@@ -122,7 +122,8 @@
 .rodape_div_1, .rodape_div2, .rodape_div3{
     display: flex;
     width: calc(100% / 4 - 20px);
-    padding: 3px;
+    padding: 10px;
+    margin: 10px;
 }
 
 
