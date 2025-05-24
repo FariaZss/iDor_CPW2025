@@ -52,6 +52,8 @@ body {
 #blocoMain{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: auto;
     height: auto;
     background-color: blue;
@@ -59,12 +61,18 @@ body {
 
 
 .blocoBanner{
-    height: 100px;
-    width: 100px;
+    height: 250px;
+    width: 700px;
     border-radius: 10px;
     background-color: grey;
 }
 
+#blocoCategoria{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
 
 #blocoCategoria div{
     height: 100px;
