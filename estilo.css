@@ -43,6 +43,8 @@
     margin: 10px;
 }
 
+
+
 #blocoMain{
     display: flex;
     width: auto;
@@ -74,7 +76,7 @@
 
 
 .blocoPrincipaisF{
-    display: inline-block;
+    display: inline-flex;
     margin: 50px 10px;
     width: 250px;
     height: 200px;
@@ -82,8 +84,19 @@
     background-color: grey;
 }
 
+.blocoPromos{
+    display: inline-flex;
+    margin: 50px 10px;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: grey;
+
+}
+
 
 .hr{
+    width: 10px;
     margin: 50px;
 }
 
