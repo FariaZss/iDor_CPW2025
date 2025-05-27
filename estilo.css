@@ -10,9 +10,9 @@ body {
 
 /*  Estilo Cabeçalho */
 #cabeca {
-  height: 200px;
-  background-color: #1CAA77;
-  font-family: Arial;
+    height: 200px;
+    background-color: #1CAA77;
+    font-family: Arial;
 }
 
 /*
@@ -43,46 +43,82 @@ body {
 
 
 /* ESTILO MAIN - ANDRIUS*/
-
-
-.subtitles{
-    margin: 10px;
-}
-
 #blocoMain{
-    display: flex;
-    flex-direction: row;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     width: auto;
     height: auto;
     background-color: blue;
 }
 
+.subtitles{
+    margin: 0 15px;
+}
 
-.blocoBanner{
-    height: 100px;
-    width: 100px;
+#blocoBanner{
+    position: relative;
+    width: 100%;
+}
+
+#blocoBanner div{
+    position: relative;
+    left: 320px;
+    width: 800px;
+    height: 300px;
     border-radius: 10px;
     background-color: grey;
 }
 
+#blocoCategoria{
+    display: flex;
+}
 
 #blocoCategoria div{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 300px;
+    margin: 15px;
     border-radius: 10px;
     background-color: grey;
 }
 
-.blocoPrincipaisF{
-     height: 100px;
-    width: 100px;
+#blocoPrincipaisF{
+    display: flex;
+}
+
+#blocoPrincipaisF div{
+    height: 200px;
+    width: 250px;
+    margin: 15px;
     border-radius: 10px;
     background-color: grey;
 }
 
-.blocoPromos{
-     height: 100px;
-    width: 100px;
+#blocoPromo{
+    display: flex;
+}
+
+
+#blocoPromo div{
+    height: 270px;
+    width: 750px;
+    margin: 15px; 
+    border-radius: 10px;
+    background-color: grey;
+
+}
+
+#blocoProduto{
+    display: grid;
+    grid-template-columns: 270px 750px;
+    grid-column-gap: 180px;
+}
+
+#blocoProduto div{
+    height: 250px;
+    width: 250px;
+    margin: 15px; 
     border-radius: 10px;
     background-color: grey;
 
@@ -90,7 +126,7 @@ body {
 
 
 hr{
-    margin: 0cap;
+    margin: 25px;
 }
 
 
