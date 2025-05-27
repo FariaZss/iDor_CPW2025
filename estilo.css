@@ -50,15 +50,23 @@ body {
     margin: auto;
     width: auto;
     height: auto;
-    background-color: blue;
+    background-color: #fafafa;
+}
+a{
+    text-decoration: none;
 }
 
+hr{
+    margin: 25px;
+}
 .subtitles{
+    color: #279355FC;
     margin: 0 15px;
 }
 
 #blocoBanner{
     position: relative;
+    top: 10px;
     width: 100%;
 }
 
@@ -71,6 +79,7 @@ body {
     background-color: grey;
 }
 
+/*Teste commit aaa*/
 #blocoCategoria{
     display: flex;
 }
@@ -111,8 +120,8 @@ body {
 
 #blocoProduto{
     display: grid;
-    grid-template-columns: 270px 750px;
-    grid-column-gap: 180px;
+    grid-template-areas: "div div div div div";
+    grid-column-gap: 40px;
 }
 
 #blocoProduto div{
@@ -125,9 +134,6 @@ body {
 }
 
 
-hr{
-    margin: 25px;
-}
 
 
 /* ESTILO RODAPÉ */
