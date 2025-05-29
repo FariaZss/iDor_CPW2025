@@ -202,11 +202,11 @@ hr{
 
 
 #rodape{
-    background-color: rgb(55, 194, 78);
+    background-color: #1CAA77;
     width: auto;
     height: 250px fit-content;
+  
 }
-
 
 .rodape a{
     text-decoration: none;
@@ -252,6 +252,15 @@ img {
     gap: 20px; 
     margin-top: 15px;
 }
-
-
+.botao-topo {
+        position: fixed; 
+        bottom: 20px;
+        right: 10px; 
+        padding: 20px; 
+        background-color: #9fb19f;
+        border: none; 
+        cursor: pointer; 
+        border-radius: 5px; 
+    }
+   
 
