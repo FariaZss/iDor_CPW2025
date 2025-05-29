@@ -11,13 +11,23 @@
     <!--CABECALHO-->
     <header>
         <section id="cabeca">
-           
+
             <div>
                 <input type="text" class="buscas-input" placeholder="Pesquisar...">
                 <button class="buscas-box">
                     <img src="" alt="">
                 </button>
             </div>
+
+            <nav id="blocoLogin">
+                <div class="farmaLogin">
+                    <button class="btn_login">Entrar</button>
+                </div>
+                
+                <div class="farmaCad">
+                    <button class="btn_cad">Cadastre-se</button>
+                </div>
+            </nav>
         
         </section>
     </header>
@@ -59,9 +69,11 @@
 
         <hr>
 
-        <a href="#categoria">
+        <button class="btn_main" a href="#categoria">
             <h3 class="subtitles"> Categorias </h3>
         </a>
+        </button>
+
         <nav id="blocoCategoria">
             <div></div>
             <div></div>
@@ -72,9 +84,11 @@
         
         <hr>
 
+        <button class="btn_main">
         <a href="#promocao">
             <h3 class="subtitles"> Promoção </h3>
         </a>
+        </button>
         <nav id="blocoPromo">
             <div></div>
             <div></div>
@@ -82,21 +96,46 @@
 
         <hr>
 
+        <button class="btn_main">
         <a href="#topFarma">
             <h3 class="subtitles" href="#topFarma"> Principais Farmacias </h3>
         </a>
+        </button>
+
         <nav id="blocoPrincipaisF">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="blocoTopfarma">
+                <div class="descFarma">
+                     <p> Distância: 5km </p>
+                     <img src="/src/pinmarker.png">
+                </div>
+            </div>
+            <div class="blocoTopfarma">
+                <div class="descFarma">
+                    <p> Distância: 15km </p>
+                    <img src="/src/pinmarker.png"> 
+                </div>
+            </div>
+            <div class="blocoTopfarma">
+                <div class="descFarma">
+                    <p> Distância: 20km </p>
+                    <img src="/src/pinmarker.png">
+                </div>
+            </div>
+            <div class="blocoTopfarma">
+                <div class="descFarma">
+                    <p> Distância: 4.5km </p>
+                    <img src="/src/pinmarker.png">
+                </div>
+            </div>
         </nav>
 
         <hr>
         
+        <button class="btn_main">
         <a href="#produto">
             <h3 class="subtitles"> Produtos </h3>
         </a>
+        </button>
         <nav id="blocoProduto">
             <div></div>
             <div></div>

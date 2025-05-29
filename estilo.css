@@ -15,6 +15,28 @@ body {
     font-family: Arial;
 }
 
+#blocoLogin{
+    position: absolute;
+    display: flex;
+    margin-top: 40px;
+    right:5px;
+}   
+
+.btn_login{
+    width: 120px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.btn_cad{
+    width: 120px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
 /*
 .buscas-box {
     
@@ -62,6 +84,13 @@ hr{
 .subtitles{
     color: #279355FC;
     margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.btn_main{
+    cursor: pointer;
+    background-color: transparent;
+    border-style: none;
 }
 
 #blocoBanner{
@@ -96,12 +125,45 @@ hr{
     display: flex;
 }
 
+/*
 #blocoPrincipaisF div{
     height: 200px;
     width: 250px;
     margin: 15px;
     border-radius: 10px;
     background-color: grey;
+}
+*/
+.blocoTopfarma{
+    display: flex;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.descFarma{
+    position: relative;
+    display: flex;
+    top: 170px;
+    height: 50px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.descFarma p{
+    margin: 15px;
+}
+
+.descFarma img{
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+
 }
 
 #blocoPromo{
