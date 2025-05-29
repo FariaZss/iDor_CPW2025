@@ -1,12 +1,40 @@
 body {
-  width: 100%; /* O body ocupa toda a largura do viewport */
-  height: 100vh; /* O body ocupa toda a altura do viewport */
-  margin: 0; /* Remova a margem padrão */
-  padding: 0; /* Remova o preenchimento padrão */
-  box-sizing: border-box; /* Garante que o padding e a borda não aumentem a largura do elemento */
+    width: 100%;
+    /* O body ocupa toda a largura do viewport */
+    height: 100vh;
+    /* O body ocupa toda a altura do viewport */
+    margin: 0;
+    /* Remova a margem padrão */
+    padding: 0;
+    /* Remova o preenchimento padrão */
+    box-sizing: border-box;
+    /* Garante que o padding e a borda não aumentem a largura do elemento */
+    font-family: sans-serif;
+    /* Define a fonte padrão */
 }
 
+#blocoLogin {
+    position: absolute;
+    display: flex;
+    margin-top: 40px;
+    right: 5px;
+}
 
+.btn_login {
+    width: 120px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.btn_cad {
+    width: 120px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
 
 /*  Estilo Cabeçalho */
 #cabeca {
@@ -15,28 +43,6 @@ body {
     font-family: Arial;
 }
 
-#blocoLogin{
-    position: absolute;
-    display: flex;
-    margin-top: 40px;
-    right:5px;
-}   
-
-.btn_login{
-    width: 120px;
-    height: 50px;
-    margin: 20px;
-    border-radius: 10px;
-    border-style: none;
-}
-
-.btn_cad{
-    width: 120px;
-    height: 50px;
-    margin: 20px;
-    border-radius: 10px;
-    border-style: none;
-}
 /*
 .buscas-box {
     
@@ -57,7 +63,7 @@ body {
 
 
 .buscas-box:hover .buscas-input {
-   
+
     padding-left: 2em;
     padding-right: 1em;
     width: 250px;
@@ -65,7 +71,7 @@ body {
 
 
 /* ESTILO MAIN - ANDRIUS*/
-#blocoMain{
+#blocoMain {
     display: block;
     justify-content: center;
     align-items: center;
@@ -74,46 +80,49 @@ body {
     height: auto;
     background-color: #fafafa;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-hr{
+hr {
     margin: 25px;
 }
-.subtitles{
+
+.subtitles {
     color: #279355FC;
     margin: 0 15px;
     text-transform: uppercase;
 }
 
-.btn_main{
+.btn_main {
     cursor: pointer;
     background-color: transparent;
     border-style: none;
 }
 
-#blocoBanner{
+/* Banner */
+#blocoBanner {
     position: relative;
     top: 10px;
     width: 100%;
 }
 
-#blocoBanner div{
+#blocoBanner div {
     position: relative;
-    left: 320px;
-    width: 800px;
+    width: 100vh;
+    margin: auto;
     height: 300px;
     border-radius: 10px;
     background-color: grey;
 }
 
 /*Teste commit aaa*/
-#blocoCategoria{
+#blocoCategoria {
     display: flex;
 }
 
-#blocoCategoria div{
+#blocoCategoria div {
     height: 200px;
     width: 300px;
     margin: 15px;
@@ -121,10 +130,18 @@ hr{
     background-color: grey;
 }
 
-#blocoPrincipaisF{
+#blocoPrincipaisF {
     display: flex;
 }
-
+/*
+#blocoPrincipaisF div {
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: grey;
+}
+*/
 /*
 #blocoPrincipaisF div{
     height: 200px;
@@ -165,59 +182,116 @@ hr{
     height: 30px;
 
 }
-
-#blocoPromo{
+#blocoPromo {
     display: flex;
 }
 
 
-#blocoPromo div{
+#blocoPromo div {
     height: 270px;
     width: 750px;
-    margin: 15px; 
+    margin: 15px;
     border-radius: 10px;
     background-color: grey;
 
 }
 
-#blocoProduto{
+/* BLOCO PRODUTOS */
+#blocoProduto .listing {
+    list-style: none;
     display: grid;
-    grid-template-areas: "div div div div div";
-    grid-column-gap: 40px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
-#blocoProduto div{
-    height: 250px;
-    width: 250px;
-    margin: 15px; 
+.listing li {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta h5 {
+    background-color: #33ca93;
+    color: rgb(252, 249, 249);
+    margin-bottom: 0;
+    padding-bottom: 3px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+*/ .listing .body {
+    padding: 10px;
+}
+
+
+#blocoProduto .prod {
+    height: 240px;
+    width: 220px;
+    margin: 15px;
     border-radius: 10px;
     background-color: grey;
 
 }
 
+.prod img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#blocoProduto .body.prod {
+    position: relative;
+    overflow: hidden;
+}
+
+#blocoProduto .body.prod img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#blocoProduto .cta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(51, 202, 147, 0.85);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 5px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+#blocoProduto .cta h5 {
+    margin: 0;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
 
 
 
 /* ESTILO RODAPÉ */
 
 
-#rodape{
+#rodape {
     background-color: rgb(55, 194, 78);
     width: auto;
     height: 250px fit-content;
 }
 
 
-.rodape a{
+.rodape a {
     text-decoration: none;
     color: white;
 }
 
 
-.rodape p{
+.rodape p {
     margin-bottom: 5px;
 }
-.rodape_div{
+
+.rodape_div {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -227,14 +301,17 @@ hr{
 }
 
 img {
-    border-radius: 10px; /* Borda arredondada */
+    border-radius: 10px;
+    /* Borda arredondada */
     padding: 1px;
     margin: 10px;
 }
 
 
 
-.rodape_div_1, .rodape_div2, .rodape_div3{
+.rodape_div_1,
+.rodape_div2,
+.rodape_div3 {
     display: flex;
     width: calc(100% / 4 - 20px);
     padding: 10px;
@@ -242,16 +319,14 @@ img {
 }
 
 
-.rodape_div{
+.rodape_div {
     padding: 60px 0px 40px 0px;
 }
+
 .Redes {
     display: flex;
     flex-direction: row;
-    align-items: center; 
-    gap: 20px; 
+    align-items: center;
+    gap: 20px;
     margin-top: 15px;
 }
-
-
-
