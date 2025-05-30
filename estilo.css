@@ -1,16 +1,12 @@
 body {
-    width: 100%;
-    /* O body ocupa toda a largura do viewport */
-    height: 100vh;
-    /* O body ocupa toda a altura do viewport */
+    width: 100vw;
+    min-height: 100vh;
     margin: 0;
-    /* Remova a margem padrão */
     padding: 0;
-    /* Remova o preenchimento padrão */
     box-sizing: border-box;
-    /* Garante que o padding e a borda não aumentem a largura do elemento */
     font-family: sans-serif;
-    /* Define a fonte padrão */
+    background-color: #fafafa;
+    overflow-x: hidden;
 }
 
 #blocoLogin {
@@ -60,7 +56,6 @@ body {
     background: none;
     transition: .45s;
 }
-
 
 .buscas-box:hover .buscas-input {
 
@@ -112,14 +107,18 @@ hr {
     position: relative;
     width: 100vh;
     margin: auto;
-    height: 300px;
+    height: 250px;
     border-radius: 10px;
     background-color: grey;
 }
 
 /*Teste commit aaa*/
 #blocoCategoria {
+    position: relative;
     display: flex;
+    margin: auto;
+    height: auto;
+    max-width: 1200px;  
 }
 
 #blocoCategoria div {
@@ -130,33 +129,37 @@ hr {
     background-color: grey;
 }
 
-#blocoPrincipaisF {
+
+/*BLOCO PROMOCOES*/
+#blocoPromo {
+    position: relative;
     display: flex;
+    margin: auto;
+    height: auto;
+    max-width: 1200px;
+}  
+#blocoPromo div {
+    height: 270px;
+    width: 750px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: grey;    
 }
 
-/*
-#blocoPrincipaisF div {
-    height: 200px;
-    width: 250px;
-    margin: 15px;
-    border-radius: 10px;
-    background-color: grey;
-}
-*/
-/*
-#blocoPrincipaisF div{
-    height: 200px;
-    width: 250px;
-    margin: 15px;
-    border-radius: 10px;
-    background-color: grey;
-}
-*/
-.blocoTopfarma {
+/*BLOCO TOP FARMACIAS*/
+#blocoPrincipaisF {
     display: flex;
-    height: 250px;
-    width: 250px;
+    justify-content: center;
+    width: 100%;
+}
+
+.blocoTopfarma {
+    position: relative;
+    display: flex;
     margin: 15px;
+    height: 200px;
+    width: 250px;
+    max-width: 1200px;
     border-radius: 10px;
     background-color: grey;
 }
@@ -164,15 +167,16 @@ hr {
 .descFarma {
     position: relative;
     display: flex;
-    top: 170px;
+    top: 120px;
     height: 50px;
     width: 250px;
     margin: 15px;
     border-radius: 10px;
-    background-color: blue;
+    justify-content: center;
+    background-color: transparent;
 }
 
-.descFarma p {
+.descFarma h6 {
     margin: 15px;
 }
 
@@ -184,31 +188,35 @@ hr {
 
 }
 
-#blocoPromo {
-    display: flex;
+.bi-geo-alt{
+    position: relative;
+    top: 14px;
+    right: 10px;
+    font-size: 15px;
 }
 
+/*FIM BLOCO TOP FARMA*/
 
-#blocoPromo div {
-    height: 270px;
-    width: 750px;
-    margin: 15px;
-    border-radius: 10px;
-    background-color: grey;
-
-}
 
 /* BLOCO PRODUTOS */
+#blocoProduto {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 #blocoProduto .listing {
+    justify-content: center;
     list-style: none;
-    display: grid;
+    display: flex;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
 .listing li {
-    border-radius: 5px;
     display: flex;
+    border-radius: 5px;
     flex-direction: column;
 }
 
