@@ -33,12 +33,25 @@ body {
 }
 
 /*  Estilo Cabeçalho */
-#cabeca {
+#cabecalho {
     height: 200px;
     background-color: #1CAA77;
     font-family: Arial;
+    align-items: center;
+    justify-content: center;
 }
 
+#cabecalho .head{
+    align-items: center;
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    height: 100%;
+}
+ 
 /*
 .buscas-box {
     
@@ -86,7 +99,8 @@ hr {
 
 .subtitles {
     color: #279355FC;
-    margin: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
     text-transform: uppercase;
 }
 
@@ -115,17 +129,32 @@ hr {
 /*Teste commit aaa*/
 #blocoCategoria {
     position: relative;
+    justify-content: center;
     display: flex;
-    margin: auto;
-    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1200px;  
 }
 
-#blocoCategoria div {
+#blocoCategoria .listing {
+    display: flex;
+    align-items: center;
+    width: 100%;
     height: 200px;
+    margin: 10px;
+    padding: 1px;
+}
+
+#blocoCategoria .body.categoria{
     width: 300px;
-    margin: 15px;
-    border-radius: 10px;
+    height: 100%;
+    margin: 10px
+}
+
+#blocoCategoria .ctg{
+    width: 100%;
+    height: 100%;
+    border-radius:  10px;
     background-color: grey;
 }
 
@@ -133,68 +162,67 @@ hr {
 /*BLOCO PROMOCOES*/
 #blocoPromo {
     position: relative;
-    display: flex;
-    margin: auto;
-    height: auto;
-    max-width: 1200px;
-}  
-#blocoPromo div {
-    height: 270px;
-    width: 750px;
-    margin: 15px;
-    border-radius: 10px;
-    background-color: grey;    
-}
-
-/*BLOCO TOP FARMACIAS*/
-#blocoPrincipaisF {
-    display: flex;
     justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+}  
+#blocoPromo .listing {
+    display: flex;
+    align-items: center;
     width: 100%;
+    height: 300px;
+    margin: 10px;
+    padding: 1px;    
 }
 
-.blocoTopfarma {
-    position: relative;
-    display: flex;
-    margin: 15px;
-    height: 200px;
-    width: 250px;
-    max-width: 1200px;
+#blocoPromo .body.promocao {
+    width: 700px;
+    height: 100%;
+    margin: 10px
+}
+
+#blocoPromo .promo{
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
+    margin: 15px;
     background-color: grey;
 }
 
-.descFarma {
+/*BLOCO TOP FARMACIAS*/
+#blocoTopFarmacia {
     position: relative;
+    justify-content: center;
     display: flex;
-    top: 120px;
-    height: 50px;
-    width: 250px;
-    margin: 15px;
-    border-radius: 10px;
-    justify-content: center;
-    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
 }
 
-.descFarma h6 {
-    margin: 15px;
-}
-
-.descFarma img {
+#blocoTopFarmacia .listing{
+    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 30px;
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    padding: 1px;
 
 }
 
-.bi-geo-alt{
-    position: relative;
-    top: 14px;
-    right: 10px;
-    font-size: 15px;
+#blocoTopFarmacia .body.topfarma{
+    width: 1000px;
+    height: 100%;
+    margin: 10px;
 }
 
+#blocoTopFarmacia .farma{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: grey;
+}
 /*FIM BLOCO TOP FARMA*/
 
 
@@ -210,6 +238,7 @@ hr {
     justify-content: center;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
