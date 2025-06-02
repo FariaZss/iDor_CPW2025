@@ -52,11 +52,28 @@ body {
     height: 100%;
 }
  
-/*
-.buscas-box {
-    
+#pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
-*/
+
+.buscas-btn{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.3em;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: color 0.2s;
+    border-radius: 0%;
+    width: 38px;
+    height: 38px;
+    display: center;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .buscas-input {
@@ -75,6 +92,7 @@ body {
     padding-left: 2em;
     padding-right: 1em;
     width: 250px;
+    
 }
 
 
