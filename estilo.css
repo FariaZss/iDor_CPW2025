@@ -43,14 +43,43 @@ body {
 
 #cabecalho .head{
     align-items: center;
-    display: grid;
-    max-width: 1200px;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    max-width: 1200px;
     padding: 30px;
-    height: 100%;
+    height: 70%;   
+    width: 80%;
 }
+
+#cabecalho #menu{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 1200px;
+    height: 30%;   
+    width: 80%;
+}
+
+#cabecalho .lista{
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#cabecalho .menuBurg{
+    height: 100%;
+}   
+
+#menu .bi-list{
+    font-size: 30px;
+}
+<<<<<<< Updated upstream
  
 #pesquisa{
     display: flex;
@@ -73,6 +102,11 @@ body {
     display: center;
     align-items: center;
     justify-content: center;
+=======
+/*
+.buscas-box {
+    
+>>>>>>> Stashed changes
 }
 
 
@@ -144,7 +178,7 @@ hr {
     background-color: rgb(231, 57, 57);
 }
 
-/*Teste commit aaa*/
+/* Categorias */
 #blocoCategoria {
     position: relative;
     justify-content: center;
