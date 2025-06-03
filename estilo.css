@@ -382,13 +382,15 @@ hr {
     margin-right: auto;
     position: relative; 
     display: flex;
-    max-width: 1200px;  
+    max-width: 1200px; 
+    gap: 40px; 
 }
  .rodape_div_1 img {
     width: 100px;
     height: 100px;
     border-radius: 10px;
     margin-bottom: 10px;
+   
 }
 
 .rodape_div_1, .rodape_div2, .rodape_div3, .Rodape_div4 {
@@ -398,6 +400,7 @@ hr {
     width: fit-content ;
     padding: 10px;
     margin: 20px;
+    gap: 10px;
 }
 
 
@@ -405,7 +408,7 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin-top: 15px;
     justify-content: center;
 }
