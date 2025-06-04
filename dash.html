@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Produto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2, h3 {
+      color: #333;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      margin-top: 5px;
+    }
+
+    button {
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #4338ca;
+    }
+
+    #listaProdutos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .produto-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 200px;
+      text-align: center;
+    }
+
+    .produto-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .produto-card h4 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #111827;
+    }
+
+    .produto-card p {
+      margin: 0;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <h2>Cadastro de Produto</h2>
+  <form id="produtoForm">
+    <label>
+      Nome:
+      <input type="text" id="nome" required>
+    </label>
+    <label>
+      URL da Imagem:
+      <input type="file" id="imagem" required>
+    </label>
+    <label>
+      Preço:
+      <input type="number" id="preco" step="0.01" required>
+    </label>
+    <button type="submit">Cadastrar Produto</button>
+  </form>
+
+  <h3>Produtos Cadastrados</h3>
+  <div id="listaProdutos"></div>
+
+  <script src="produto.js"></script>
+</body>
+</html>
