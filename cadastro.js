@@ -2,12 +2,10 @@ document.getElementById("produtoForm").addEventListener("submit", function(event
   event.preventDefault();
 
   const nome = document.getElementById("nome").value;
-  const imagem = document.getElementById("imagem").value;
   const preco = parseFloat(document.getElementById("preco").value).toFixed(2);
 
   const novoProduto = {
     nome,
-    imagem,
     preco
   };
 
@@ -34,12 +32,25 @@ function mostrarProdutos() {
 
     item.innerHTML = `
       <h4>${produto.nome}</h4>
-      <img src="${produto.imagem}" alt="${produto.nome}" width="150"><br>
+      <img src="src/product1.png" alt="${produto.nome}" width="150"><br>
       <strong>Preço:</strong> R$ ${produto.preco}
     `;
 
     container.appendChild(item);
   });
+}
+
+function baixarJSON() {
+const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+const blob = new Blob([JSON.stringify(produtos, null, 2)], { type: "application/json" });
+const url = URL.createObjectURL(blob);
+
+const a = document.createElement("a");
+a.href = url;
+a.download = "produtos.json";
+a.click();
+
+URL.revokeObjectURL(url);
 }
 
 // Exibe os produtos ao carregar a página
