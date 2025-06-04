@@ -96,15 +96,24 @@ body {
     
 }
 
+.menuBurg{
+    position: relative;
+}
+
+.head .cart{
+    position: absolute;
+    margin: 10px;
+    left: 1300px;
+}
+
 .bi-list{
-    font-size: 30px;
+    font-size: 40px;
     font-style: bold;
 }
 
 .bi-basket{
+    font-size:30px;
     position: relative;
-        
-    font-size:35px;
 }
 
 
@@ -161,7 +170,7 @@ hr {
     margin: auto;
     height: 250px;
     border-radius: 10px;
-    background-color: rgb(231, 57, 57);
+    background-color: transparent;
 }
 
 /* Categorias */
@@ -181,6 +190,12 @@ hr {
     height: 200px;
     margin: 10px;
     padding: 1px;
+}
+
+#blocoCategoria img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 #blocoCategoria .body.categoria{
@@ -224,9 +239,15 @@ hr {
 #blocoPromo .promo{
     width: 100%;
     height: 100%;
-    border-radius: 10px;
     margin: 15px;
+    border-radius: 10px;
     background-color: grey;
+}
+
+#blocoPromo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 /*BLOCO TOP FARMACIAS*/
@@ -260,6 +281,13 @@ hr {
     height: 100%;
     border-radius: 10px;
     background-color: grey;
+}
+
+#blocoTopFarmacia img{
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 /*FIM BLOCO TOP FARMA*/
 
