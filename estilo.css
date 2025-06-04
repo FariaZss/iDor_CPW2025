@@ -472,6 +472,8 @@ hr {
     border: none;
     outline: none;
     box-shadow: 0 8px 24px rgba(51, 202, 147, 0.35); /* mantém o efeito visual do hover */
+    border: transparent;
+     color: #fff;
 }
 /* Botões (carrinho e favorito) */
 .produtos-btns {
