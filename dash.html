@@ -105,8 +105,14 @@
   <h3>Produtos Cadastrados</h3>
   <div id="listaProdutos"></div>
 
-  <button onclick="baixarJSON()"></button>
-
+  <button onclick="baixarJSON()">Baixar Banco atual</button>
+  <br>
+  <br>
+    <!-- Essa função permite que a gente consiga manter o mesmo banco de dados
+     independente de trabalharmos em diferentes máquinas...
+     é um workaround pro problema de só termos LocalStorage.-->
+  <input type="file" id="uploadJSON" accept=".json">
+  <button onclick="carregarJSON()">Carregar JSON</button>
   <script src="cadastro.js"></script>
 </body>
 </html>

@@ -53,5 +53,30 @@ a.click();
 URL.revokeObjectURL(url);
 }
 
+function carregarJSON() {
+  const input = document.getElementById("uploadJSON");
+  if (input.files.length === 0) {
+    alert("Selecione um arquivo JSON.");
+    return;
+  }
+  const file = input.files[0];
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      const produtos = JSON.parse(e.target.result);
+      if (!Array.isArray(produtos)) {
+        alert("O arquivo deve conter um array de produtos.");
+        return;
+      }
+      localStorage.setItem("produtos", JSON.stringify(produtos));
+      mostrarProdutos();
+      alert("Produtos carregados com sucesso!");
+    } catch (err) {
+      alert("Arquivo JSON inválido.");
+    }
+  };
+  reader.readAsText(file);
+}
+
 // Exibe os produtos ao carregar a página
 mostrarProdutos();
