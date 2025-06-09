@@ -9,6 +9,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 #blocoLogin {
     position: absolute;
     display: flex;
@@ -222,20 +224,20 @@ hr {
 }  
 #blocoPromo .listing {
     display: flex;
-    align-items: center;
     width: 100%;
     height: 300px;
-    margin: 10px;
     padding: 1px;    
 }
 
 #blocoPromo .body.promocao {
+    align-items: center;
     width: 700px;
     height: 100%;
     margin: 10px
 }
 
 #blocoPromo .promo{
+    
     width: 100%;
     height: 100%;
     margin: 15px;
@@ -410,13 +412,10 @@ hr {
 
 /* ESTILO RODAPÉ */
 
-
 #rodape{
     background-color: #1CAA77;
     width: auto;
     height: 250px fit-content;
-   
-  
 }
 
 
