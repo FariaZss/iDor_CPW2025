@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <script src="js/scripts.js" type="text/javascript" defer></script>
+    <script src="js/components/header.js" type="text/javascript" defer></script>
+    <script src="js/components/footer.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -14,34 +17,12 @@
 </head>
 
 <body>
+    
     <!--CABECALHO-->
-    <section id="cabecalho">
-        <header class="head">
+    <header-component></header-component>
+    <!--Fim cabecalho-->
 
-            <div class="menuBurg">
-                <i class="bi bi-list"></i>
-            </div>
-
-            <div class="pesquisa">
-                <form class="buscas-box">
-                    <input type="text" class="buscas-input" placeholder="Pesquisar...">
-                    <button type="submit" class="buscas-btn">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </form>
-            </div>
-
-            <div class="cart"><i class="bi bi-basket"></i></div>
-
-
-
-
-        </header>
-
-
-    </section>
-
-    <!--CORPO PRINCIPAL | teste-->
+<!--CORPO PRINCIPAL-->
     <main id="blocoMain">
 
         <nav id="blocoBanner">
@@ -106,7 +87,7 @@
                 </li>
                 <li class="body categoria">
                     <div class="ctg">
-                        <img src="src/char4.png" alt="char5">
+                        <img src="src/char5.png" alt="char5">
                     </div>
                 </li>
 
@@ -157,7 +138,7 @@
                     <div class="farma"><img src="src/farmaciapopular.jpeg" alt="Logo Farmacia Popular"></div>
                 </li>
                 <li class="body topfarma">
-                    <div class="farma"></div>
+                    <div class="farma"><img src="/src/Logo_Farmácias_Pague_Menos.png" alt=" Logo Farmácias PagueMenos"></div>
                 </li>
             </ul>
         </nav>
@@ -171,47 +152,16 @@
         </button>
         <nav id="blocoProduto">
             <ul class="listing" id="produtos-container">
-                <li class="body prod">
-                    <button class="produtos-btns basket-btn"><i class="bi bi-basket2"></i></button>
-                    <button class="produtos-btns heart-btn"><i class="bi bi-heart"></i></button>
-                    <img src="src/generico.jpg" alt="generico">
-                    <div class="cta">
-                        <h5>nome do produto</h5>
-                    </div>
-                </li>
-                <li class="body prod">
-                    <button class="produtos-btns basket-btn"><i class="bi bi-basket2"></i></button>
-                    <button class="produtos-btns heart-btn"><i class="bi bi-heart"></i></button>
-                    <img src="src/generico.jpg" alt="generico">
-                    <div class="cta">
-                        <h5>nome do produto</h5>
-                    </div>
-                </li>
-                <li class="body prod">
-                    <button class="produtos-btns basket-btn"><i class="bi bi-basket2"></i></button>
-                    <button class="produtos-btns heart-btn"><i class="bi bi-heart"></i></button>
-                    <img src="src/generico.jpg" alt="generico">
-                    <div class="cta">
-                        <h5>nome do produto</h5>
-                    </div>
-                </li>
-                <li class="body prod">
-                    <button class="produtos-btns basket-btn"><i class="bi bi-basket2"></i></button>
-                    <button class="produtos-btns heart-btn"><i class="bi bi-heart"></i></button>
-                    <img src="src/generico.jpg" alt="generico">
-                    <div class="cta">
-                        <h5>nome do produto</h5>
-                    </div>
-                </li>
+                <!-- Os produtos serão inseridos dinamicamente pelo mostraprodutos.js -->
+            </ul>
         </nav>
 
     </main>
 
+
     <!--RODAPÉ-->
-    <footer id="rodape">
-        <button class="botao-topo" title="Voltar ao topo">
-            <i class="bi bi-arrow-bar-up"></i>
-        </button>
+    <footer-component></footer-component>
+    <!--Fim Rodapé-->
 
         <div class="rodape_div">
 
@@ -231,8 +181,6 @@
                 <p>E-mail: Idor@ifrs.com.br</p>
                 <p>Telefone: (51) 3930-6002</p>
                 <p>Endereço: R. Cel. Vicente, 281 - Porto Alegre/RS</p>
-
-
             </div>
             <div class="rodape_div3">
 
@@ -278,6 +226,7 @@
         </div>
 
     </footer>
+    <script src="js/MostraProdutos.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
