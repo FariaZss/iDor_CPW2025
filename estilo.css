@@ -406,7 +406,13 @@ hr {
 
 /* ESTILO RODAPÉ */
 
+footer{
+    position: relative;
+    bottom: 1;
+}
+
 #rodape{
+    bottom: 0;
     background-color: #1CAA77;
     width: auto;
     height: 250px fit-content;
@@ -424,18 +430,17 @@ hr {
 }
 
 .rodape_div {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    padding: 60px 10px 40px 10px;
-    justify-content: center; 
-    text-align: center; 
-    margin-left: auto;
-    margin-right: auto;
     position: relative; 
     display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 10px 40px 10px;
     max-width: 1200px; 
+    width: 100%;
     gap: 40px; 
 }
  .rodape_div_1 img {
