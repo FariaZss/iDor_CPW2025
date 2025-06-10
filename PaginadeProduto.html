@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Produto</title>
+    <script src="js/components/header.js" defer></script>
+    <script src="js/components/footer.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .produto-detalhe {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 32px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            padding: 32px;
+            max-width: 700px;
+            margin: 40px auto;
+        }
+        .produto-imagem {
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            max-width: 260px;
+            width: 100%;
+            background: #f7f7f7;
+        }
+        .produto-info {
+            flex: 1;
+        }
+        .produto-info h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #222;
+        }
+        .produto-info p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 12px;
+        }
+        .produto-preco {
+            font-size: 1.3rem;
+            color: #0a7d2c;
+            font-weight: bold;
+            margin-top: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header-component></header-component>
+
+    <main id="produto-container">
+        <h1>Carregando produto...</h1>
+    </main>
+
+    <footer-component></footer-component>
+    <script src="PaginadeProduto.js">
+
+    </script>
+</body>
+</html>
