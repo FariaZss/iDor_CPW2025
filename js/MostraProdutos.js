@@ -37,6 +37,11 @@ function mostrar() {
                 preco.textContent = produto.preco ? `R$ ${produto.preco}` : "Preço indisponível";
 
                 ctaDiv.appendChild(nome);
+                // Torna o span "preco-produto" clicável e redireciona para PaginadeProduto.html com o id do produto
+                preco.style.cursor = "pointer";
+                preco.addEventListener('click', () => {
+                    window.location.href = `PaginadeProduto.html?id=${produto.id}`;
+                });
                 ctaDiv.appendChild(preco);
 
                 // Monta o card

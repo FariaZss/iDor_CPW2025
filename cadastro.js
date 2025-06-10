@@ -4,12 +4,13 @@ document.getElementById("produtoForm").addEventListener("submit", function(event
   const nome = document.getElementById("nome").value;
   const preco = parseFloat(document.getElementById("preco").value).toFixed(2);
 
+  let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
   const novoProduto = {
+    id: produtos.length > 0 ? produtos[produtos.length - 1].id + 1 : 1,
     nome,
     preco
   };
 
-  let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
   produtos.push(novoProduto);
   localStorage.setItem("produtos", JSON.stringify(produtos));
 
