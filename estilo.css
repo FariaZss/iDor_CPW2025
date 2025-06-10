@@ -53,11 +53,9 @@ body {
     width: 100%;
 }
  
-#pesquisa{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+.head .pesquisa{
+    position: relative;
+    left: 400px;
 }
 
 .buscas-btn{
@@ -67,7 +65,6 @@ body {
     font-size: 1.3em;
     cursor: pointer;
     margin-left: 5px;
-    transition: color 0.2s;
     border-radius: 0%;
     width: 38px;
     height: 38px;
@@ -78,43 +75,40 @@ body {
 
 
 .buscas-input {
-    outline: 0;
     font-size: 1.2em;
-    color: #fff;
-    width: 0;
+    color: black;
     padding: 0;
     border: none;
-    background: none;
-    transition: .45s;
+    border-radius: 10px;
+    display: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.buscas-box:hover .buscas-input {
-
-    padding-left: 2em;
-    padding-right: 1em;
-    width: 250px;
-    
-}
 
 .menuBurg{
     position: relative;
 }
 
 .head .cart{
-    position: absolute;
+    position: relative;
     margin: 10px;
-    left: 1300px;
+    left: 770px;
 }
 
 .bi-list{
     font-size: 40px;
     font-style: bold;
+    position: relative;
+    left: 10px;
 }
 
 .bi-basket{
     font-size:30px;
-    position: relative;
+    position: right;
 }
+
+
 
 
 /* ESTILO MAIN - ANDRIUS*/
