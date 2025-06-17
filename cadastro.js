@@ -3,12 +3,21 @@ document.getElementById("produtoForm").addEventListener("submit", function(event
 
   const nome = document.getElementById("nome").value;
   const preco = parseFloat(document.getElementById("preco").value).toFixed(2);
+  const descricao = document.getElementById("desc").value;
+  const categorias = document.getElementById('categorias').value
+
+  const categoriasArray = categorias
+    .split(',')
+    .map(cat => cat.trim())
+    .filter(cat => cat.length > 0);
 
   let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
   const novoProduto = {
     id: produtos.length > 0 ? produtos[produtos.length - 1].id + 1 : 1,
     nome,
-    preco
+    preco,
+    descricao,
+    categorias: categoriasArray // Adiciona o array de categorias ao produto
   };
 
   produtos.push(novoProduto);

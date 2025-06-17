@@ -1,12 +1,52 @@
 [
   {
-    "id": 1,
-    "nome": "teste",
-    "preco": "30.20"
+    "id": 5,
+    "nome": "paracetaloca",
+    "preco": "30.20",
+    "descricao": "toma quando ficar loka",
+    "categorias": [
+      "anti-loko",
+      "remédio"
+    ]
   },
   {
-    "id": 2,
-    "nome": "teste2",
-    "preco": "40.20"
+    "id": 5,
+    "nome": "paracetaloca",
+    "preco": "30.20",
+    "descricao": "toma quando ficar loka",
+    "categorias": [
+      "anti-loko",
+      "remédio"
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "paracetaloca",
+    "preco": "30.20",
+    "descricao": "toma quando ficar loka",
+    "categorias": [
+      "anti-loko",
+      "remédio"
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "paracetaloca",
+    "preco": "30.20",
+    "descricao": "toma quando ficar loka",
+    "categorias": [
+      "anti-loko",
+      "remédio"
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "paracetaloca",
+    "preco": "30.20",
+    "descricao": "toma quando ficar loka",
+    "categorias": [
+      "anti-loko",
+      "remédio"
+    ]
   }
 ]

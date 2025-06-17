@@ -93,11 +93,20 @@
   <form id="produtoForm">
     <label>
       Nome:
-      <input type="text" id="nome" required>
+      <input type="text" id="nome" placeholder="Digite o nome do produto" required>
     </label>
     <label>
       Preço:
-      <input type="number" id="preco" step="0.01" required>
+      <input type="number" id="preco" placeholder="Digite o valor do produto" step="0.01" required>
+    </label>
+        <label>
+      Descrição:
+      <input type="text" id="desc" placeholder="Digite uma breve descrição do produto" required>
+    </label>
+        </label>
+        <label>
+      Categoria:
+      <input type="text" id="categorias" placeholder="Digite as categorias separadas por vírgula" required>
     </label>
     <button type="submit">Cadastrar Produto</button>
   </form>

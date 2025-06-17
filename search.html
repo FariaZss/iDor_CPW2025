@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Produto</title>
+    <script src="js/components/header.js" defer></script>
+    <script src="js/components/footer.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+#resultados-busca {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.produto {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin-bottom: 24px;
+  padding: 20px;
+  gap: 24px;
+}
+.produto-imagem {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: #fafafa;
+}
+.produto-info {
+  flex: 1;
+}
+.produto-info h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.4em;
+  color: #222;
+}
+.produto-preco {
+  color: #1a8917;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+}
+.categorias {
+  margin-top: 10px;
+}
+.categoria {
+  display: inline-block;
+  background: #e3e3e3;
+  color: #444;
+  border-radius: 12px;
+  padding: 3px 12px;
+  font-size: 0.95em;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+.produto-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: box-shadow 0.2s;
+}
+.produto-link:hover .produto {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  background: #f5f5f5;
+}
+    </style>
+</head>
+<body>
+    <header-component></header-component>
+    <div id="resultados-busca"></div>
+
+    <footer-component></footer-component>
+
+    <script src="search.js"></script>
+</body>
+</html>
