@@ -120,16 +120,24 @@ footer {
 /*MENU SIDEBAR*/
 
 .sidenav {
-  height: 100%;
-  width: 0;
-  position:fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  background-color: #278f64;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #278f64;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav iframe{
+    position: relative;
+    left: 65px;
+    margin: auto;
 }
 
 .sidenav a {
@@ -593,10 +601,10 @@ footer{
     color: white;
 }
 
-
+/*
 .rodape p {
     margin-bottom: 5px;
-}
+}*/
 
 .rodape_div {
     position: relative; 
@@ -611,8 +619,10 @@ footer{
     max-width: 1200px; 
     width: 100%;
     gap: 40px; 
+
 }
  .rodape_div_1 img {
+    background-color: #fafafa;
     width: 100px;
     height: 100px;
     border-radius: 10px;
@@ -620,7 +630,7 @@ footer{
    
 }
 
-.rodape_div_1, .rodape_div2, .rodape_div3, .Rodape_div4 {
+.rodape_div_1, .rodape_div3, .Rodape_div4 {
     display: flex;
     flex-direction: column;
     align-items: center; 

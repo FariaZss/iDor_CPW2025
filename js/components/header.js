@@ -27,17 +27,18 @@ class Header extends HTMLElement {
 
                 <div id="mySidenav" class="sidenav">
 
-                <div class="logo_menu">
-                    <img src="src/logo_idor.png" alt="logo">
-                </div>
+                    <div class="logo_menu">
+                        <img src="src/logo_idor.png" alt="logo">
+                    </div>
 
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#">Categorias</a>
                     <a href="#">Destaques</a>
                     <a href="#">Promoções</a>
                     <a href="#">Contato</a>
+                    <a href="#">Sobre Nós</a>
                     <a href="#">Farmácias próximas de você</a>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6908.598405331317!2d-51.22230977198572!3d-30.028272908947113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFarm%C3%A1cias!5e0!3m2!1spt-BR!2sbr!4v1750711448842!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6908.598405331317!2d-51.22230977198572!3d-30.028272908947113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFarm%C3%A1cias!5e0!3m2!1spt-BR!2sbr!4v1750711448842!5m2!1spt-BR!2sbr" width="270" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
             </nav>

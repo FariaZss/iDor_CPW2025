@@ -21,11 +21,9 @@ class Footer extends HTMLElement {
 
                 <img src="src/logo_idor.png" alt="logo" width="60px" height="60px">
 
-
-
-
-
             </div>
+
+
 
             <div class="rodape_div2">
 
@@ -33,7 +31,9 @@ class Footer extends HTMLElement {
                 <p>E-mail: Idor@ifrs.com.br</p>
                 <p>Telefone: (51) 3930-6002</p>
                 <p>Endereço: R. Cel. Vicente, 281 - Porto Alegre/RS</p>
-
+                <p>Integrantes: Andrius Farias de Lima, Guilherme Kauã</p>
+                <P> Luis Eduardo Souza e Murilo Xavier </p>
+                
 
             </div>
             <div class="rodape_div3">
