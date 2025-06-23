@@ -18,7 +18,7 @@ function mostrar() {
       <div class="produto-card-footer">
         <span class="produto-preco">R$ ${Number(produto.preco).toFixed(2)}</span>
         <a href="PaginadeProduto.html?id=${encodeURIComponent(produto.id)}" class="btn btn-success btn-comprar">
-          <i class="bi bi-cart-plus"></i> Comprar
+        <i class="bi bi-cart-plus"></i> Detalhes
         </a>
       </div>
     </div>

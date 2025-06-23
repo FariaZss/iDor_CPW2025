@@ -32,7 +32,7 @@ class Header extends HTMLElement {
                     </div>
 
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="../categorias.html">Categorias</a>
+                    <a href="../categorias.html?categoria=Medicamentos">Categorias</a>
                     <a href="#blocoProduto">Destaques</a>
                     <a href="#blocoPromo">Promoções</a>
                     <a href="#rodape">Contato</a>
