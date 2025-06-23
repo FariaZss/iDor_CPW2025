@@ -12,20 +12,28 @@ class Header extends HTMLElement {
     <section id="cabecalho">
         <header class="head">
 
+            <a href="index.html" title="Home" style="color:inherit; text-decoration:none; font-size:1.7em; margin-right:16px;">
+                <i class="bi bi-house-door"></i>
+            </a>
+
             <div class="menuBurg">
                 <i class="bi bi-list"></i>
             </div>
 
             <div class="pesquisa">
                 <form class="buscas-box">
-                    <input type="text" class="buscas-input" placeholder="Pesquisar...">
-                    <button type="submit" class="buscas-btn">
+                    <input type="text" id="buscas-input" class="buscas-input" placeholder="Pesquisar...">
+                    <button type="submit" id="buscas-botao" class="buscas-btn">
                         <i class="bi bi-search"></i>
                     </button>
                 </form>
             </div>
 
-            <div class="cart"><i class="bi bi-basket"></i></div>
+            <div class="cart">
+              <a href="carrinho.html" title="Ver carrinho" style="color:inherit; text-decoration:none;">
+                <i class="bi bi-basket"></i>
+              </a>
+            </div>
         </header>
     </section>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -36,10 +44,7 @@ class Header extends HTMLElement {
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    `;
-
-    
+        crossorigin="anonymous"></script> `;
   }
 }
 

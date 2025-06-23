@@ -36,7 +36,7 @@
                 <div class="carousel-inner">
 
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="src/product1.png" alt="First slide">
+                        <img class="d-block w-100" src="src/bannerpromo.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="src/product1.png" alt="Second slide">
@@ -64,33 +64,47 @@
         </button>
 
         <nav id="blocoCategoria">
-            <ul class="listing">
+            <ul class="listing categorias-listagem">
                 <li class="body categoria">
-                    <div class="ctg">
-                        <img src="src/char1.png" alt="char1">
-                    </div>
+                    <a href="categorias.html?categoria=Medicamentos" class="categoria-link">
+                        <div class="ctg">
+                            <img src="src/char1.png" alt="Medicamentos">
+                        </div>
+                        <span class="categoria-nome">Medicamentos</span>
+                    </a>
                 </li>
                 <li class="body categoria">
-                    <div class="ctg">
-                        <img src="src/char2.png" alt="char2">
-                    </div>
+                    <a href="categorias.html?categoria=Beleza" class="categoria-link">
+                        <div class="ctg">
+                            <img src="src/char2.png" alt="Beleza">
+                        </div>
+                        <span class="categoria-nome">Beleza</span>
+                    </a>
                 </li>
                 <li class="body categoria">
-                    <div class="ctg">
-                        <img src="src/char3.png" alt="char3">
-                    </div>
+                    <a href="categorias.html?categoria=Vitaminas" class="categoria-link">
+                        <div class="ctg">
+                            <img src="src/char3.png" alt="Vitaminas">
+                        </div>
+                        <span class="categoria-nome">Vitaminas</span>
+                    </a>
                 </li>
                 <li class="body categoria">
-                    <div class="ctg">
-                        <img src="src/char4.png" alt="char4">
-                    </div>
+                    <a href="categorias.html?categoria=Infantil" class="categoria-link">
+                        <div class="ctg">
+                            <img src="src/char4.png" alt="Infantil">
+                        </div>
+                        <span class="categoria-nome">Infantil</span>
+                    </a>
                 </li>
                 <li class="body categoria">
-                    <div class="ctg">
-                        <img src="src/char5.png" alt="char5">
-                    </div>
+                    <a href="categorias.html?categoria=Higiene" class="categoria-link">
+                        <div class="ctg">
+                            <img src="src/char5.png" alt="Higiene">
+                        </div>
+                        <span class="categoria-nome">Higiene</span>
+                    </a>
                 </li>
-
             </ul>
         </nav>
 
@@ -156,17 +170,13 @@
             </ul>
         </nav>
 
-        <!-- Exemplo de campos de busca -->
-        <input type="text" id="buscas-input" placeholder="Buscar...">
-        <button id="buscas-botao">Buscar</button>
 
     </main>
 
 
     <!--RODAPÉ-->
     <footer-component></footer-component>
-
-    <script src="search.js"></script>
+    <script src="js/components/search.js"></script>
     <script src="js/MostraProdutos.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

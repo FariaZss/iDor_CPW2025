@@ -1,21 +1,31 @@
-// --- PARTE 1: Redirecionamento da busca (funciona no index.html) ---
-const inputBusca = document.getElementById('buscas-input');
-const botaoBusca = document.getElementById('buscas-botao');
+window.addEventListener('DOMContentLoaded', () => {
+  // Aguarda o header ser inserido no DOM
+  customElements.whenDefined('header-component').then(() => {
+    // Aguarda o próximo tick para garantir que o innerHTML já foi inserido
+    setTimeout(() => {
+      const formBusca = document.querySelector('.buscas-box');
+      const inputBusca = document.getElementById('buscas-input');
+      const botaoBusca = document.getElementById('buscas-botao');
 
-if (inputBusca && botaoBusca) {
-  botaoBusca.addEventListener('click', function() {
-    const termo = inputBusca.value.trim();
-    if (termo) {
-      window.location.href = `search.html?q=${encodeURIComponent(termo)}`;
-    }
-  });
+      if (formBusca && inputBusca && botaoBusca) {
+        formBusca.addEventListener('submit', function(event) {
+          event.preventDefault();
+          const termo = inputBusca.value.trim();
+          if (termo) {
+            window.location.href = `search.html?q=${encodeURIComponent(termo)}`;
+          }
+        });
 
-  inputBusca.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-      botaoBusca.click();
-    }
+        inputBusca.addEventListener('keydown', function(event) {
+          if (event.key === 'Enter') {
+            event.preventDefault();
+            botaoBusca.click();
+          }
+        });
+      }
+    }, 0);
   });
-}
+});
 
 // --- PARTE 2: Exibição dos resultados (funciona no search.html) ---
 const params = new URLSearchParams(window.location.search);
@@ -47,6 +57,7 @@ if (container && termoBusca) {
                 <div class="categorias">
                   ${(Array.isArray(produto.categorias) ? produto.categorias : []).map(cat => `<span class="categoria">${cat}</span>`).join(' ')}
                 </div>
+                <button class="btn btn-success btn-comprar" style="margin-top:12px;">Comprar</button>
               </div>
             </div>
           </a>

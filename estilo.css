@@ -7,9 +7,22 @@ body {
     font-family: sans-serif;
     background: #fafafa !important;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
+main {
+  flex: 1 0 auto;
+}
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  flex-shrink: 0;
+}
 
 #blocoLogin {
     position: absolute;
@@ -36,7 +49,7 @@ body {
 
 /*  Estilo Cabeçalho */
 #cabecalho {
-    height: 200px;
+    height: 100px;
     background-color: #1CAA77;
     font-family: Arial;
     align-items: center;
@@ -175,35 +188,131 @@ hr {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;  
+    max-width: 1200px;
+    width: 100%;
 }
 
-#blocoCategoria .listing {
+#blocoCategoria .categorias-listagem {
     display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 220px;
+}
+
+#blocoCategoria .body.categoria {
+    width: 200px;
+    min-width: 160px;
+    max-width: 100%;
+    margin: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.18s;
+}
+
+#blocoCategoria .categoria-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 200px;
-    margin: 10px;
-    padding: 1px;
+    height: 100%;
+    transition: transform 0.15s;
 }
 
-#blocoCategoria img{
+#blocoCategoria .categoria-link:hover .ctg {
+    box-shadow: 0 4px 24px rgba(33,136,56,0.10);
+    transform: translateY(-4px) scale(1.04);
+}
+
+#blocoCategoria .ctg {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 14px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 
-#blocoCategoria .body.categoria{
-    width: 300px;
-    height: 100%;
-    margin: 10px
+#blocoCategoria .ctg img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 12px;
+    background: transparent;
+    display: block;
 }
 
-#blocoCategoria .ctg{
+#blocoCategoria .categoria-nome {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #218838;
+    font-size: 1.13em;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    background: #fff;
+    padding: 4px 0 0 0;
+    z-index: 1;
+    border-radius: 6px;
     width: 100%;
-    height: 100%;
-    border-radius:  10px;
-    background-color: grey;
+    box-sizing: border-box;
+}
+
+/* Cards de categoria - visual moderno e integrado */
+.categoria-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.15s;
+}
+.categoria-link:hover .ctg {
+  box-shadow: 0 4px 24px rgba(33,136,56,0.10);
+  transform: translateY(-4px) scale(1.03);
+}
+.ctg {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 18px 16px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  min-width: 120px;
+  min-height: 140px;
+}
+.ctg img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.categoria-nome {
+  font-size: 1.08em;
+  font-weight: 600;
+  color: #218838;
+  text-align: center;
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
 }
 
 
@@ -552,4 +661,163 @@ footer{
     right: 5px;
     position: relative;
 
+}
+
+.btn-comprar {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 32px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(34,139,34,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-comprar i {
+  margin-right: 8px;
+}
+.btn-comprar:hover {
+  background: #218838;
+  box-shadow: 0 4px 16px rgba(34,139,34,0.12);
+}
+
+/* Cards de produto modernos - menores e responsivos */
+.produto-card {
+  list-style: none;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  margin: 0;
+  padding: 0;
+  width: 210px;           /* menor largura */
+  min-width: 180px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+  overflow: hidden;
+}
+
+.produto-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.produto-img {
+  width: 100%;
+  height: 120px;          /* menor altura */
+  object-fit: cover;
+  background: #f8f9fa;
+}
+
+.produto-card-body {
+  padding: 12px 12px 10px 12px; /* padding menor */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.produto-card-title {
+  font-size: 1em;         /* fonte menor */
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+.produto-card-desc {
+  color: #666;
+  font-size: 0.93em;
+  margin-bottom: 8px;
+  min-height: 32px;
+}
+
+.produto-card-categorias {
+  margin-bottom: 8px;
+}
+.produto-card-categorias .badge {
+  background: #e3e3e3;
+  color: #279355;
+  margin-right: 4px;
+  font-size: 0.89em;
+}
+
+.produto-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.produto-preco {
+  color: #1a8917;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.btn-comprar {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 6px 14px;
+  font-size: 0.97em;
+  transition: background 0.2s;
+  margin-top: 0;
+}
+
+/* Container dos cards em grid responsivo */
+#produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  #produtos-container {
+    gap: 12px;
+  }
+  .produto-card {
+    width: 44vw;
+    min-width: 140px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #produtos-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .produto-card {
+    width: 96vw;
+    min-width: 0;
+  }
+  .carousel-inner img {
+    max-height: 180px;
+    border-radius: 10px;
+  }
+}
+
+.carousel-inner img,
+#carouselExampleIndicators img {
+    max-height: 340px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    background: #f8f9fa;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    .carousel-inner img,
+    #carouselExampleIndicators img {
+        max-height: 180px;
+        border-radius: 10px;
+    }
+}
+
+.carousel-inner {
+    max-height: 340px;
 }

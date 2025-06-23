@@ -5,12 +5,12 @@
     "preco": "30.20",
     "descricao": "toma quando ficar loka",
     "categorias": [
-      "anti-loko",
+      "medicamentos",
       "remédio"
     ]
   },
   {
-    "id": 5,
+    "id": 1,
     "nome": "paracetaloca",
     "preco": "30.20",
     "descricao": "toma quando ficar loka",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 2,
     "nome": "paracetaloca",
     "preco": "30.20",
     "descricao": "toma quando ficar loka",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 3,
     "nome": "paracetaloca",
     "preco": "30.20",
     "descricao": "toma quando ficar loka",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 4,
     "nome": "paracetaloca",
     "preco": "30.20",
     "descricao": "toma quando ficar loka",

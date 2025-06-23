@@ -14,7 +14,6 @@
                 const produto = produtos.find(p => p.id == id);
 
                 if (produto) {
-                    // Garante que categorias seja sempre um array
                     let categorias = [];
                     if (Array.isArray(produto.categorias)) {
                         categorias = produto.categorias;
@@ -28,17 +27,35 @@
 
                     container.innerHTML = `
                         <div class="produto-detalhe">
-                            <img src="${produto.imagem || 'src/product1.png'}" alt="${produto.nome}" class="produto-imagem">
+                            <img src="src/product1.png" alt="${produto.nome}" class="produto-imagem">
                             <div class="produto-info">
                                 <h1>${produto.nome}</h1>
-                                <br>
-                                <p>Sobre esse produto:</p>
                                 <p>${produto.descricao}</p>
-                                <div class="produto-preco">Preço: R$ ${produto.preco}</div>
-                                <p class=categorias>${categoriasHTML}</p>
+                                <div>
+                                    ${(categorias || []).map(cat => `
+                                        <a href="categorias.html?categoria=${encodeURIComponent(cat)}" class="categoria-btn btn btn-outline-success btn-sm m-1">${cat}</a>
+                                    `).join('')}
+                                </div>
+                                <div class="produto-preco">R$ ${Number(produto.preco).toFixed(2)}</div>
+                                <a href="PaginadeProduto.html?id=${encodeURIComponent(produto.id)}" class="btn btn-success btn-comprar" style="margin-top:24px; padding: 10px 32px; font-size: 1.1em; border-radius: 8px;">
+                                    <i class="bi bi-cart-plus" style="margin-right:8px;"></i>Comprar
+                                </a>
                             </div>
                         </div>
                     `;
+
+                    document.querySelector('.btn-comprar').onclick = function() {
+                        let carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
+                        let jaExiste = carrinho.find(item => item.id == produto.id);
+                        if (jaExiste) {
+                            jaExiste.quantidade = (jaExiste.quantidade || 1) + 1;
+                        } else {
+                            carrinho.push({id: produto.id, quantidade: 1});
+                        }
+                        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+                        if (typeof atualizarBadgeCarrinho === 'function') atualizarBadgeCarrinho();
+                        alert('Produto adicionado ao carrinho!');
+                    };
                 } else {
                     container.innerHTML = '<h2>Produto não encontrado.</h2>';
                 }
