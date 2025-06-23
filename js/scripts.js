@@ -5,3 +5,11 @@ document.querySelector('.botao-topo').addEventListener('click', (event) => {
                         behavior: 'smooth'
                     });
                 });
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "400px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
