@@ -2,7 +2,7 @@
   {
     "id": 5,
     "nome": "Paracetamol 100mg",
-    "preco": "30.20",
+    "preco": "29.99",
     "descricao": "Para dores gerais no corpo",
     "categorias": [
       "Medicamentos",
@@ -11,42 +11,42 @@
   },
   {
     "id": 1,
-    "nome": "Histamim 20mg",
-    "preco": "10.20",
-    "descricao": "Para tosse e alergias",
+    "nome": "Vitamina A 500mg",
+    "preco": "19.49",
+    "descricao": "Para fortalecer o sistema imunológico",
     "categorias": [
-      "Anti-alergicos",
+      "Vitaminas",
       "Medicamentos"
     ]
   },
   {
     "id": 2,
-    "nome": "Creme Hidratante 100g",
-    "preco": "50.20",
-    "descricao": "Para uma pele mais suave",
+    "nome": "Fraldas Descartáveis",
+    "preco": "50.99",
+    "descricao": "Para bebês",
     "categorias": [
-      "Cosmeticos",
-      "Hidratantes"
+      "Higiene",
+      "Infantil"
     ]
   },
   {
     "id": 3,
-    "nome": "Dipirona 50mg",
-    "preco": "15.50",
-    "descricao": "Para dores e febre",
+    "nome": "Papel higiênico 8 rolos",
+    "preco": "15.49",
+    "descricao": "Para uso diário",
     "categorias": [
-      "Analgesicos",
-      "Medicamentos"
+      "Higiene",
+      "Diversos"
     ]
   },
   {
     "id": 4,
-    "nome": "Azitromicina 500mg",
+    "nome": "Creme Hidratante",
     "preco": "25.99",
-    "descricao": "Para infecções bacterianas",
+    "descricao": "Para pele seca",
     "categorias": [
-      "Antibioticos",
-      "Medicamentos"
+      "Beleza",
+      "Cosmeticos"
     ]
   }
 ]
