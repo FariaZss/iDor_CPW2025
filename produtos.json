@@ -1,52 +1,52 @@
 [
   {
     "id": 5,
-    "nome": "paracetaloca",
+    "nome": "Paracetamol 100mg",
     "preco": "30.20",
-    "descricao": "toma quando ficar loka",
+    "descricao": "Para dores gerais no corpo",
     "categorias": [
-      "medicamentos",
-      "remédio"
+      "Medicamentos",
+      "Analgesicos"
     ]
   },
   {
     "id": 1,
-    "nome": "paracetaloca",
-    "preco": "30.20",
-    "descricao": "toma quando ficar loka",
+    "nome": "Histamim 20mg",
+    "preco": "10.20",
+    "descricao": "Para tosse e alergias",
     "categorias": [
-      "anti-loko",
-      "remédio"
+      "Anti-alergicos",
+      "Medicamentos"
     ]
   },
   {
     "id": 2,
-    "nome": "paracetaloca",
-    "preco": "30.20",
-    "descricao": "toma quando ficar loka",
+    "nome": "Creme Hidratante 100g",
+    "preco": "50.20",
+    "descricao": "Para uma pele mais suave",
     "categorias": [
-      "anti-loko",
-      "remédio"
+      "Cosmeticos",
+      "Hidratantes"
     ]
   },
   {
     "id": 3,
-    "nome": "paracetaloca",
-    "preco": "30.20",
-    "descricao": "toma quando ficar loka",
+    "nome": "Dipirona 50mg",
+    "preco": "15.50",
+    "descricao": "Para dores e febre",
     "categorias": [
-      "anti-loko",
-      "remédio"
+      "Analgesicos",
+      "Medicamentos"
     ]
   },
   {
     "id": 4,
-    "nome": "paracetaloca",
-    "preco": "30.20",
-    "descricao": "toma quando ficar loka",
+    "nome": "Azitromicina 500mg",
+    "preco": "25.99",
+    "descricao": "Para infecções bacterianas",
     "categorias": [
-      "anti-loko",
-      "remédio"
+      "Antibioticos",
+      "Medicamentos"
     ]
   }
 ]
